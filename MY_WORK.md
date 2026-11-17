@@ -132,68 +132,108 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - [November 13, 2026, 7:00 pm]
+**What I did**: Read the assignment instructions and understood the project requirements
 
 **Details**:
+- Read the assignment instructions and the project requirements
+- Reviewed the main tasks that needed to be completed
+- Identified the three required features: Ready Queue Lock, Statistics Locks, and Counting Semaphore
+- Reviewed what was required for the code, testing, documentation, and video
 
-**Challenges**:
+**Challenges**: Some parts of the assignment were new to me, and I needed to understand what I had to do before starting
 
-**Solution**:
+**Solution**: I read the instructions carefully and organized the requirements into smaller tasks
 
-**Time spent**:
+**Time spent**: 1 hour
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**:
+### Entry 2 - [November 14, 2026, 5:00 pm]
+**What I did**: Prepared a plan for completing the assignment
 
 **Details**:
+Organized the assignment into separate steps
 
-**Challenges**:
+Planned to implement the three features one by one
 
-**Solution**:
+Decided to test the program after making the required changes
 
-**Time spent**:
+Reviewed the order of implementation before starting the coding work
+
+**Challenges**: I was not sure how to organize all the assignment tasks and which feature to start with
+
+**Solution**: I followed the order provided in the assignment instructions and divided the work into smaller steps
+
+**Time spent**: 1 hour
 
 ---
 
-### Entry 3 - [Date and Time]
-**What I did**:
+### Entry 3 - [November 15, 2026, 3:00 PM]
+**What I did**: Set my student ID and updated my GitHub repository
 
 **Details**:
+Opened SchedulerSimulationSync.java
 
-**Challenges**:
+Updated the student ID to my actual ID: 444051323
 
-**Solution**:
+Saved the changes
 
-**Time spent**:
+Committed the student ID update to GitHub
+
+**Challenges**: needed to make sure that the student ID in the code matched my actual student ID
+
+**Solution**: I checked the ID in the code before committing the changes
+
+**Time spent**: 1 hour
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**:
+### Entry 4 - [November 16, 2026, 3:00 PM]
+**What I did**: Implemented Feature 1 and Feature 2
 
 **Details**:
+Implemented Feature 1 by adding a ReentrantLock to protect the shared ready queue
 
-**Challenges**:
+Used lock(), try, and finally to make sure the lock is released
 
-**Solution**:
+Implemented Feature 2 by adding locks to protect the shared statistics counters
 
-**Time spent**:
+Tested the code after making the changes.
+
+Created separate commits for the two features
+
+**Challenges**: I faced some coding errors while adding the locks and organizing the code
+
+**Solution**: I reviewed the code, fixed the errors, and ran the program again to check the changes
+
+**Time spent**: 4 hours
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**:
+### Entry 5 - [November 17, 2026, 3:00 PM]
+**What I did**: Implemented Feature 3 and tested the final program
 
 **Details**:
+Imported the Semaphore class
 
-**Challenges**:
+Added a counting semaphore to the ReadyQueue
 
-**Solution**:
+Used release() when a process was added to the queue
 
-**Time spent**:
+Replaced the CPU busy-waiting loop with acquire()
+
+Added shutdown handling to wake up the CPUs
+
+Ran the program five times and checked the verification results
+
+Confirmed that all verification checks passed and busy-waiting polls were zero
+
+**Challenges**: I faced a NullPointerException when a CPU received a null process during shutdown
+
+**Solution**: Added a null check after calling poll() so the CPU could stop safely during shutdown. Then I ran the program again and checked the output
+
+**Time spent**: 3 hours
 
 ---
 
@@ -214,13 +254,13 @@
 
 > 💡 **TIP:** Fill this in **last**, after all entries are written.
 
-**Total time spent on assignment**: [X hours]
+**Total time spent on assignment**: [10 hours]
 
-**Most challenging part**:
+**Most challenging part**: implementing the counting semaphore and handling CPU shutdown correctly
 
-**Most interesting learning**:
+**Most interesting learning**:  I learned how ReentrantLock protects shared data and how a counting semaphore helps CPUs wait for available processes without busy waiting
 
-**What I would do differently next time**:
+**What I would do differently next time**:  I would start the assignment earlier, understand the requirements first, and test each feature after implementing it
 
 ---
 
